@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A20BA7071CFF1A0100563A3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20BA7061CFF1A0100563A3B /* AppDelegate.swift */; };
+		A20BA7091CFF1A0100563A3B /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20BA7081CFF1A0100563A3B /* GameView.swift */; };
+		A20BA70B1CFF1A0100563A3B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20BA70A1CFF1A0100563A3B /* GameViewController.swift */; };
+		A20BA70D1CFF1A0100563A3B /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A20BA70C1CFF1A0100563A3B /* art.scnassets */; };
+		A20BA70F1CFF1A0100563A3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20BA70E1CFF1A0100563A3B /* Assets.xcassets */; };
+		A20BA7121CFF1A0100563A3B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A20BA7101CFF1A0100563A3B /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A20BA7031CFF1A0100563A3B /* RunningMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunningMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20BA7061CFF1A0100563A3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A20BA7081CFF1A0100563A3B /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		A20BA70A1CFF1A0100563A3B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		A20BA70C1CFF1A0100563A3B /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		A20BA70E1CFF1A0100563A3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A20BA7111CFF1A0100563A3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A20BA7131CFF1A0100563A3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A20BA7001CFF1A0100563A3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A20BA6FA1CFF1A0100563A3B = {
+			isa = PBXGroup;
+			children = (
+				A20BA7051CFF1A0100563A3B /* RunningMan */,
+				A20BA7041CFF1A0100563A3B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A20BA7041CFF1A0100563A3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A20BA7031CFF1A0100563A3B /* RunningMan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A20BA7051CFF1A0100563A3B /* RunningMan */ = {
+			isa = PBXGroup;
+			children = (
+				A20BA7061CFF1A0100563A3B /* AppDelegate.swift */,
+				A20BA7081CFF1A0100563A3B /* GameView.swift */,
+				A20BA70A1CFF1A0100563A3B /* GameViewController.swift */,
+				A20BA70C1CFF1A0100563A3B /* art.scnassets */,
+				A20BA70E1CFF1A0100563A3B /* Assets.xcassets */,
+				A20BA7101CFF1A0100563A3B /* MainMenu.xib */,
+				A20BA7131CFF1A0100563A3B /* Info.plist */,
+			);
+			path = RunningMan;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A20BA7021CFF1A0100563A3B /* RunningMan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A20BA7161CFF1A0100563A3B /* Build configuration list for PBXNativeTarget "RunningMan" */;
+			buildPhases = (
+				A20BA6FF1CFF1A0100563A3B /* Sources */,
+				A20BA7001CFF1A0100563A3B /* Frameworks */,
+				A20BA7011CFF1A0100563A3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RunningMan;
+			productName = RunningMan;
+			productReference = A20BA7031CFF1A0100563A3B /* RunningMan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A20BA6FB1CFF1A0100563A3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Salt Pig";
+				TargetAttributes = {
+					A20BA7021CFF1A0100563A3B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A20BA6FE1CFF1A0100563A3B /* Build configuration list for PBXProject "RunningMan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A20BA6FA1CFF1A0100563A3B;
+			productRefGroup = A20BA7041CFF1A0100563A3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A20BA7021CFF1A0100563A3B /* RunningMan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A20BA7011CFF1A0100563A3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20BA70F1CFF1A0100563A3B /* Assets.xcassets in Resources */,
+				A20BA70D1CFF1A0100563A3B /* art.scnassets in Resources */,
+				A20BA7121CFF1A0100563A3B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A20BA6FF1CFF1A0100563A3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20BA7091CFF1A0100563A3B /* GameView.swift in Sources */,
+				A20BA70B1CFF1A0100563A3B /* GameViewController.swift in Sources */,
+				A20BA7071CFF1A0100563A3B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A20BA7101CFF1A0100563A3B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A20BA7111CFF1A0100563A3B /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A20BA7141CFF1A0100563A3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A20BA7151CFF1A0100563A3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A20BA7171CFF1A0100563A3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RunningMan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = saltpig.RunningMan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A20BA7181CFF1A0100563A3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RunningMan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = saltpig.RunningMan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A20BA6FE1CFF1A0100563A3B /* Build configuration list for PBXProject "RunningMan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A20BA7141CFF1A0100563A3B /* Debug */,
+				A20BA7151CFF1A0100563A3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A20BA7161CFF1A0100563A3B /* Build configuration list for PBXNativeTarget "RunningMan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A20BA7171CFF1A0100563A3B /* Debug */,
+				A20BA7181CFF1A0100563A3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A20BA6FB1CFF1A0100563A3B /* Project object */;
+}
