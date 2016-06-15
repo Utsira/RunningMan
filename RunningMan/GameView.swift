@@ -9,10 +9,17 @@
 import SceneKit
 
 class GameView: SCNView {
+    var rig: ColladaRig?
+    
+    func setRig(rig: ColladaRig){
+        self.rig = rig
+        Swift.print("rig set", self.rig) //rig set Optional(RunningMan.ColladaRig)
+      //  self.rig!.playAnimation()
+    }
     
     override func mouseDown(theEvent: NSEvent) {
         /* Called when a mouse click occurs */
-        
+        self.rig!.playAnimation("walk") 
         // check what nodes are clicked
         let p = self.convertPoint(theEvent.locationInWindow, fromView: nil)
         let hitResults = self.hitTest(p, options: nil)
@@ -44,6 +51,11 @@ class GameView: SCNView {
         }
         
         super.mouseDown(theEvent)
+    }
+    
+    override func mouseUp(theEvent: NSEvent) {
+        self.rig!.stopAnimation("walk")
+        super.mouseUp(theEvent)
     }
 
 }
