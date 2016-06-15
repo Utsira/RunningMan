@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A2073AB51D11A68900E2C6B1 /* ColladaRig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2073AB41D11A68900E2C6B1 /* ColladaRig.swift */; };
 		A20BA7071CFF1A0100563A3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20BA7061CFF1A0100563A3B /* AppDelegate.swift */; };
 		A20BA7091CFF1A0100563A3B /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20BA7081CFF1A0100563A3B /* GameView.swift */; };
 		A20BA70B1CFF1A0100563A3B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20BA70A1CFF1A0100563A3B /* GameViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A2073AB41D11A68900E2C6B1 /* ColladaRig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColladaRig.swift; sourceTree = "<group>"; };
 		A20BA7031CFF1A0100563A3B /* RunningMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunningMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20BA7061CFF1A0100563A3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A20BA7081CFF1A0100563A3B /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				A20BA7061CFF1A0100563A3B /* AppDelegate.swift */,
 				A20BA7081CFF1A0100563A3B /* GameView.swift */,
 				A20BA70A1CFF1A0100563A3B /* GameViewController.swift */,
+				A2073AB41D11A68900E2C6B1 /* ColladaRig.swift */,
 				A20BA70C1CFF1A0100563A3B /* art.scnassets */,
 				A20BA70E1CFF1A0100563A3B /* Assets.xcassets */,
 				A20BA7101CFF1A0100563A3B /* MainMenu.xib */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A20BA7091CFF1A0100563A3B /* GameView.swift in Sources */,
+				A2073AB51D11A68900E2C6B1 /* ColladaRig.swift in Sources */,
 				A20BA70B1CFF1A0100563A3B /* GameViewController.swift in Sources */,
 				A20BA7071CFF1A0100563A3B /* AppDelegate.swift in Sources */,
 			);
@@ -283,6 +287,7 @@
 				A20BA7181CFF1A0100563A3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
