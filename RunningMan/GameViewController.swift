@@ -28,14 +28,16 @@ class GameViewController: NSViewController {
         self.gameView!.showsStatistics = true
         
         // configure the view
-        self.gameView!.backgroundColor = NSColor.blackColor()
+        self.gameView!.backgroundColor = NSColor.black
     }
     
-    override func mouseDown(theEvent: NSEvent) {
+    override func mouseDown(with event: NSEvent) {
+
         player!.walk()
     }
     
-    override func mouseUp(theEvent: NSEvent) {
+    override func mouseUp(with event: NSEvent) {
+
         player!.stopWalking()
     }
     
@@ -54,17 +56,17 @@ class GameViewController: NSViewController {
         // create and add a light to the scene
         let lightNode = SCNNode()
         lightNode.light = SCNLight()
-        lightNode.light!.type = SCNLightTypeOmni
+        lightNode.light!.type = SCNLight.LightType.omni
         lightNode.position = SCNVector3(x: 0, y: 10, z: 10)
         scene.rootNode.addChildNode(lightNode)
         
-        let skyCube = getCubeMap("miramar")
+        let skyCube = getCubeMap(inFolder: "miramar")
         
         // create and add an ambient light to the scene
         let ambientLightNode = SCNNode()
         ambientLightNode.light = SCNLight()
-        ambientLightNode.light!.type = SCNLightTypeAmbient
-        ambientLightNode.light!.color = NSColor.darkGrayColor()
+        ambientLightNode.light!.type = SCNLight.LightType.ambient
+        ambientLightNode.light!.color = NSColor.darkGray
         scene.rootNode.addChildNode(ambientLightNode)
         
         let floorNode = SCNNode(geometry: SCNFloor())
@@ -74,18 +76,18 @@ class GameViewController: NSViewController {
         let trans = SCNMatrix4Rotate(SCNMatrix4MakeScale(scale, scale, 1),CGFloat(M_PI_2) / 3 ,0, 0, 1)
         
         mat.diffuse.contents = "art.scnassets/floor07.tga"
-        mat.diffuse.wrapS = .Repeat
-        mat.diffuse.wrapT = .Repeat
+        mat.diffuse.wrapS = .repeat
+        mat.diffuse.wrapT = .repeat
         mat.diffuse.contentsTransform = trans
         mat.normal.contents = "art.scnassets/floor07_NRM.jpg"
-        mat.normal.wrapS = .Repeat
-        mat.normal.wrapT = .Repeat
+        mat.normal.wrapS = .repeat
+        mat.normal.wrapT = .repeat
         mat.normal.contentsTransform = trans
         // try to stop the floor textures trigger nasty moire jaggies at distance
-        mat.normal.mipFilter = .Linear
+        mat.normal.mipFilter = .linear
         mat.normal.maxAnisotropy = 0
         mat.normal.intensity = 0.5
-        mat.diffuse.mipFilter = .Linear
+        mat.diffuse.mipFilter = .linear
         mat.diffuse.maxAnisotropy = 0
         // reflectivity
         mat.reflective.contents = skyCube
@@ -95,7 +97,7 @@ class GameViewController: NSViewController {
         scene.rootNode.addChildNode(floorNode)
 
         let animation = CABasicAnimation(keyPath: "rotation")
-        animation.toValue = NSValue(SCNVector4: SCNVector4(x: CGFloat(0), y: CGFloat(1), z: CGFloat(0), w: CGFloat(M_PI)*2))
+        animation.toValue = NSValue(scnVector4: SCNVector4(x: CGFloat(0), y: CGFloat(1), z: CGFloat(0), w: CGFloat(Double.pi)*2))
         animation.duration = 28
         animation.repeatCount = MAXFLOAT //repeat forever
         cameraArm.addAnimation(animation, forKey: nil)
@@ -108,7 +110,7 @@ class GameViewController: NSViewController {
         
         let playerMat = SCNMaterial()
         
-        playerMat.diffuse.contents = NSColor.darkGrayColor()
+        playerMat.diffuse.contents = NSColor.darkGray
         playerMat.reflective.contents = skyCube
         playerMat.fresnelExponent = 2
         playerMat.shininess = 1
